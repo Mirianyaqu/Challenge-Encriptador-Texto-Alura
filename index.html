@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Imagenes/contrasena.png">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- boxicon -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title> Encriptador de Texto</title>
+</head>
+
+<body>
+    <header>
+        <img class="alura"   src="/Imagenes/logoAlura1.png" alt="Logo Alura">
+        <h class="tituloGeneral">Encriptador de Texto</h>
+    </header>
+    <main>
+        <form class="formSeccion">
+            <textarea class="formInput" name="mensaje" id="" cols="30" rows="10"
+                placeholder="Ingrese el texto aqui"></textarea>
+            <div class="btn-container">
+                <div class="alertamensaje">
+                    <box-icon name='error-circle' type='solid' animation='flashing' color='#0a3871'></box-icon>
+                    <i class='bx bxs-error-circle bx-flashing' style='color:#0a3871'></i>
+                    <p>Solo letras minúsculas y sin acentos.</p>
+                </div>
+            </div>
+            <div class="Submitcontainer">
+                <input class="btn-encriptar" type="submit" value="Encriptar">
+                <input class="btn-desencriptar" type="submit" value="Desencriptar">
+            </div>
+        </form>
+        <aside class="resultado">
+            <img class="resultadoToys" src="/Imagenes/toys.png" alt="iamgen toys">
+            <img class="fmujer hidden" src="/Imagenes/fmujer.png" alt="cambio Imagen">
+
+            <div class="resultadoContainer">
+                <h3 class="resultadoTitulo">Ningún mensaje fue encontrado</h3>
+                <p class="resultadoTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button class="btn-copiar hidden">Copiar</button>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p class="copy">&copy; 2024 Mirian Sánchez. Encriptador de Texto</p>
+        <div class="redes">
+            <a href="https://youtu.be/Gwi-4n2zmOA">
+                <box-icon name='youtube' type='logo' animation='burst' color='#fa071a'></box-icon>
+                <i class='bx bxl-youtube bx-burst' style='color:#fa071a'></i> </a>
+            <a href="https://github.com/Mirianyaqu/Challenge-Encriptador-Texto-Alura">
+                <box-icon name='github' type='logo' animation='burst' color='#031a35'></box-icon>
+                <i class='bx bxl-github bx-burst' style='color:#031a35'></i> </a>
+
+            <a href="https://youtu.be/Gwi-4n2zmOA">
+                <box-icon name='linkedin-square' type='logo' animation='burst' color='#2807fa'></box-icon>
+                <i class='bx bxl-linkedin-square bx-burst' style='color:#2807fa'></i></a>
+        </div>
+    </footer>
+
+</body>
+<script src="/encriptador.js"></script>
+
+</html>
+
